@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080d2b">
+    <title>RIMIDATASUB | Your Data, Your Connection!</title>
+    <meta name="description" content="RIMIDATASUB - Your destination for data, airtime, WAEC and NECO PINs.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">
+            <span class="logo-icon">R</span>
+            <span>RIMI<span class="cyan">DATA</span><span class="purple">SUB</span></span>
+        </a>
+
+        <button class="menu-button" id="menuButton">☰</button>
+
+        <nav id="navigation">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About Us</a>
+            <button class="login-button" id="loginButton">Login</button>
+            <button class="signup-button" id="signupButton">Create Account</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <span class="badge">WELCOME TO RIMIDATASUB</span>
+
+                <h1>Your Data,<br>
+                    <span>Your Connection!</span>
+                </h1>
+
+                <p>
+                    Buy data, airtime and exam PINs from one convenient
+                    platform. Your digital services, all in one place.
+                </p>
+
+                <div class="hero-buttons">
+                    <button class="primary-button" id="startButton">
+                        Get Started →
+                    </button>
+
+                    <a href="#services" class="secondary-button">
+                        Explore Services
+                    </a>
+                </div>
+
+                <div class="features">
+                    <span>✓ Easy to use</span>
+                    <span>✓ Convenient</span>
+                    <span>✓ Mobile friendly</span>
+                </div>
+            </div>
+
+            <div class="hero-card">
+                <div class="card-heading">
+                    <span>RIMIDATASUB</span>
+                    <span class="status">● Preview</span>
+                </div>
+
+                <p class="balance-label">Wallet Balance</p>
+                <h2>₦0.00</h2>
+                <p class="balance-description">Your wallet dashboard preview</p>
+
+                <div class="quick-services">
+                    <button data-service="Data">
+                        <span class="service-icon blue">▤</span>
+                        <span>Buy Data</span>
+                    </button>
+
+                    <button data-service="Airtime">
+                        <span class="service-icon purple-bg">☎</span>
+                        <span>Airtime</span>
+                    </button>
+
+                    <button data-service="WAEC PIN">
+                        <span class="service-icon green">✦</span>
+                        <span>WAEC PIN</span>
+                    </button>
+
+                    <button data-service="NECO PIN">
+                        <span class="service-icon orange">▣</span>
+                        <span>NECO PIN</span>
+                    </button>
+                </div>
+
+                <div class="card-footer">
+                    <span>✓</span> Your digital service platform
+                </div>
+            </div>
+        </section>
+
+        <section class="services-section" id="services">
+            <div class="section-heading">
+                <span class="badge">OUR SERVICES</span>
+                <h2>Everything You Need,<br><span>In One Place.</span></h2>
+                <p>Explore the services planned for RIMIDATASUB.</p>
+            </div>
+
+            <div class="services-grid">
+                <article class="service-card">
+                    <div class="service-icon blue">◉</div>
+                    <h3>Buy Data</h3>
+                    <p>Choose your network and preferred data plan.</p>
+                    <button data-service="Data">Explore Service →</button>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon purple-bg">☎</div>
+                    <h3>Buy Airtime</h3>
+                    <p>Top up a mobile phone number.</p>
+                    <button data-service="Airtime">Explore Service →</button>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon green">✦</div>
+                    <h3>WAEC PIN</h3>
+                    <p>Access our planned WAEC PIN service.</p>
+                    <button data-service="WAEC PIN">Explore Service →</button>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon orange">▤</div>
+                    <h3>NECO PIN</h3>
+                    <p>Access our planned NECO PIN service.</p>
+                    <button data-service="NECO PIN">Explore Service →</button>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon pink">▣</div>
+                    <h3>Wallet</h3>
+                    <p>A planned wallet for managing payments.</p>
+                    <button data-service="Wallet">Explore Service →</button>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon blue">↗</div>
+                    <h3>Transaction History</h3>
+                    <p>A place to view your past transactions.</p>
+                    <button data-service="Transaction History">Explore Service →</button>
+                </article>
+            </div>
+        </section>
+
+        <section class="about-section" id="about">
+            <span class="badge">WHY RIMIDATASUB?</span>
+            <h2>Simple. Modern. Convenient.</h2>
+            <p>
+                Our goal is to make buying digital services easier.
+                We are building a platform designed with you in mind.
+            </p>
+
+            <div class="about-features">
+                <div>🔐 <strong>Account Security</strong></div>
+                <div>📱 <strong>Mobile Friendly</strong></div>
+                <div>⚡ <strong>Simple Experience</strong></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <a href="#" class="logo">
+            <span class="logo-icon">R</span>
+            <span>RIMI<span class="cyan">DATA</span><span class="purple">SUB</span></span>
+        </a>
+
+        <p>© <span id="year"></span> RIMIDATASUB. All rights reserved.</p>
+        <p>Your Data, Your Connection!</p>
+    </footer>
+
+    <dialog id="serviceDialog">
+        <form method="dialog" class="dialog-content">
+            <button class="close-button" aria-label="Close">×</button>
+            <span class="badge">RIMIDATASUB</span>
+            <h2 id="dialogTitle">Service</h2>
+            <p id="dialogMessage"></p>
+            <p class="notice">
+                This is currently a website preview. Real purchases and payments
+                are not connected yet.
+            </p>
+            <button class="primary-button">Understood</button>
+        </form>
+    </dialog>
+
+    <dialog id="accountDialog">
+        <form method="dialog" class="dialog-content" id="accountForm">
+            <button class="close-button" aria-label="Close">×</button>
+            <span class="badge">YOUR RIMIDATASUB ACCOUNT</span>
+            <h2 id="accountTitle">Create Account</h2>
+
+            <label id="nameLabel">
+                Full Name
+                <input type="text" id="fullName" placeholder="Enter your full name">
+            </label>
+
+            <label>
+                Email or Phone Number
+                <input type="text" id="contact" placeholder="Enter email or phone" required>
+            </label>
+
+            <label>
+                Password
+                <input type="password" id="password" placeholder="At least 8 characters" minlength="8" required>
+            </label>
+
+            <button class="primary-button submit-button" id="accountSubmit" type="button">
+                Continue
+            </button>
+
+            <p id="accountMessage" class="account-message"></p>
+
+            <p class="switch-text">
+                <span id="switchText">Already have an account?</span>
+                <button type="button" id="switchButton">Login</button>
+            </p>
+        </form>
+    </dialog>
+
+    <script src="script.js"></script>
+</body>
+              </html>
