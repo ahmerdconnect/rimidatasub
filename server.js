@@ -201,6 +201,10 @@ app.post("/api/register", async (req, res) => {
         await client.query(
             `INSERT INTO wallets (customer_id, balance_kobo)
              VALUES ($1, 0)`,
+            // Start server
+app.listen(PORT, "0.0.0.0", () => {
+    console.log(`RIMIDATASUB server running on port ${PORT}`);
+});
             [customer.id]
         );
 
