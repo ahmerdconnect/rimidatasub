@@ -68,6 +68,17 @@ app.use((err, req, res, next) => {
     console.error("Server error:", err.message);
 
     res.status(500).json({
+        ALTER TABLE customers
+ADD COLUMN IF NOT EXISTS updated_at TIMESTAMPTZ
+DEFAULT NOW();
+
+CREATE INDEX IF NOT EXISTS idx_customers_email
+ON customers (LOWER(email))
+WHERE email IS NOT NULL;
+
+CREATE INDEX IF NOT EXISTS idx_customers_phone
+ON customers (phone)
+WHERE phone IS NOT NULL;
         success: false,
         message: "An unexpected error occurred."
     });
